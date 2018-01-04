@@ -13,6 +13,6 @@ int main() {
    cout << "Hello, World." << endl;
 
    // Write the second line of output
-
+   cout << inputString <<endl;
    return 0;
 }
