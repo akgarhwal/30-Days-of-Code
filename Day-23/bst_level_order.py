@@ -21,12 +21,14 @@ class Solution:
         queue = []
         queue.append(root)
         while len(queue) :
-            node = queue.pop(0)
-            print(node.data,end =' ')
-            if node.left != None:
-                queue.append(node.left)
-            if node.right != None:
-                queue.append(node.right)
+            child = queue.pop(0)
+            print(child.data,end =' ')
+            if child.left != None:
+                queue.append(child.left)
+            if child.right != None:
+                queue.append(child.right)
+                
+        return 
                 
                 
 T=int(input())
