@@ -1,6 +1,15 @@
+def is_leap(year):
+    leap = False
+    if year%4==0 :
+        if year%100 == 0 and year%400 ==0:
+            leap = True
+        elif year%100 != 0:
+            leap = True    
+    return leap
+
 def no_of_days(month,year):
     days = [31,28,31,30,31,30,31,31,30,31,30,31]
-    if year%4==0 and (year%100 + year%400) == 0:
+    if is_leap(year):
         days[1] = 29
     return days[month-1]
 
